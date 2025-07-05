@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Practice 1</title>
+    <style>
+        .center-text {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .left-text {
+            text-align: left;
+            padding-left: 10px;
+            padding-bottom : 30px;
+        }
+        .full-width-table {
+            width: 100%;
+        }
+        .half-width-table {
+            width: 50%;
+        }
+        .img-small {
+            width: 100px;
+        }
+        .img-middle{
+            vertical-align: middle;
+        }
+        .about-header{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        }
+        .no-bold{
+        font-weight: normal;
+        }
+        .sub-title{
+        font-weight: normal;
+        font-size: 16px;
+        }
+        .img-cell {
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Section 1: Menu -->
+<table border="1" class="full-width-table">
+    <thead>
+        <tr>
+            <th scope="col"><a href="#section2">Header</a></th>
+            <th scope="col"><a href="#section3">Biodata</a></th>
+            <th scope="col"><a href="#section4">Portofolio</a></th>
+        </tr>
+    </thead>
+</table>
+
+<br>
+
+<!-- Section 2: Judul di kiri dan gambar di kanan -->
+<table border="1" id="section2">
+    <thead>
+        <tr>
+            <th scope="col">Judul</th>
+            <th scope="col">Gambar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td class="half-width-table left-text text-top">
+            <h1>Selamat Datang di Website Saya</h1>
+            <p>Ini adalah contoh header dengan dua kolom. kolom kiri berisi teks seperti ini.</p>
+            <button type="button"> Pelajari lebih lanjut</button>
+        </td>
+        <td class="half-width-table center-text">
+            <img src="./witch.jpg" alt="A Witch Boy" class="img-small img-middle">
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+
+<!-- Section 3: Biodata dengan 6 box -->
+<table border="1" class="full-width-table" id="section3">
+    <thead>
+        <tr>
+            <th class="about-header" scope="colgroup" colspan="3">About me <br> <span class="sub-title">A brief Introduction about myself</span></th>
+        </tr>
+        <tr>
+            <th scope="col">Nama</th>
+            <th scope="col">Pendidikan</th>
+            <th scope="col">Kontak</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="center-text">
+            <td>Azam Azis</td>
+            <td>S-1 Pendidikan Kimia</td>
+            <td>081234567890</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th scope="col">Hobi</th>
+            <th scope="col">Alamat</th>
+            <th scope="col">Bahasa</th>
+        </tr>
+        <tr class="center-text">
+            <td>Coding</td>
+            <td>Yogyakarta</td>
+            <td>Indonesia, Inggris</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<!-- Section 4: Portofolio -->
+<table border="1" class="full-width-table" id="section4">
+    <thead>
+        <tr class="center-text">
+            <th class="about-header" scope="colgroup" colspan="3">Portofolio<br></th>
+        </tr>
+    </thead>
+    <tbody class="center-text">
+        <tr>
+            <td>
+                <img src="./witch.jpg" alt="A Witch Boy" class="img-small" >
+                <br> <strong>Proyek 1</strong>
+                <br> Deskripsi Proyek 1
+            </td>
+            <td>
+                <img src="./witch.jpg" alt="A Witch Boy" class="img-small" >
+                <br> <strong>Proyek 2</strong>
+                <br> Deskripsi Proyek 2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./witch.jpg" alt="A Witch Boy" class="img-small" >
+                <br> <strong>Proyek 3</strong>
+                <br> Deskripsi Proyek 3
+            </td>
+            <td>
+                <img src="./witch.jpg" alt="A Witch Boy" class="img-small" >
+                <br> <strong>Proyek 4</strong>
+                <br> Deskripsi Proyek 4
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
