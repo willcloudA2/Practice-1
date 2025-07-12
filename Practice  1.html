@@ -1,248 +1,72 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice 1</title>
-    <style>
-        .center-text {
-            text-align: center;
-            vertical-align: middle;
-        }
-        .left-text {
-            text-align: left;
-            padding-left: 10px;
-            padding-bottom : 30px;
-        }
-        .full-width-table {
-            width: 100%;
-            height: 150px;
-        }
-        .half-width-table {
-            width: 50%;
-        }
-        .img-small {
-            width: 100px;
-        }
-        .img-middle{
-            vertical-align: middle;
-        }
-        .about-header{
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .sub-title{
-            font-weight: normal;
-            font-size: 16px;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            background: linear-gradient(to right, #007bff, #0056b3);
-            padding: 10px 20px;
-            border-radius: 20px 20px 5px 5px;
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-        }
-        .brand {
-            font-weight: bold;
-        }
-        .menu a {
-            color: white;
-            text-decoration: none;
-        }
-        .normal-custom {
-            font-size: 14px;
-            display: flex;
-            gap: 10px;
-        }
-        .sentence {
-            padding-top: 5px;
-        }
-        .button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .full-width-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            padding: 20px;
-            margin-left: 10px;
-            margin-right: 250px;
-        }
-        .content-left {
-            padding-left: 45px;
-        }
-        .image-container{
-            background-color: lightgrey;
-            display:inline-block;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .text-bottom{
-            vertical-align: bottom;
-            padding-bottom: 30px;
-        }
-        .horizontal-text{
-            display: flex;
-            justify-content: space-between;
-        }
-        .table{
-            table-layout: fixed;
-            width: 100%;
-        }
-        .round-corner{
-            border-collapse: separate;
-            border-spacing: 9px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .cell-round{
-            border-radius: 5px;
-            padding: 8px;
-            background-color: lightgrey;
-        }
-        .blue-bold{
-            color: #0066cc;
-            font-weight: bold;
-        }
-        .down{
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .cell-portofolio{
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .bottom-bar{
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            background: linear-gradient(to right, #007bff, #0056b3);
-            padding: 10px 20px;
-            border-radius: 5px 5px 20px 20px;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Dodi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Section 1: Menu -->
-    <div class="navbar menu brand">
-        A2Ai5
-        <div class="normal-custom sentence">
-        <span><a href="#section2">Header</a></span>
-        <span><a href="#section3">Biodata</a></span>
-        <span><a href="#section4">Portofolio</a></span>
-        </div>
+  <!-- section 1 -->
+  <div class="navbar">
+    <div class="brand">A2Ai5</div>
+    <div class="menu">
+      <a href="#section2" class="hover-link">Header</a>
+      <a href="#section3" class="hover-link">Biodata</a>
+      <a href="#section4" class="hover-link">Portofolio</a>
     </div>
-
+  </div>
 <br>
-
 <br>
+  <!-- section 2 -->
+  <section class="header-section" id="section2">
+    <div>
+      <h2>Selamat Datang di Website Saya</h2>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <button type="button" class="btn">Pelajari Lebih Lanjut</button>
+    </div>
+      <img src="Boy.png" alt="Boy" class="header-img image-box">
+  </section>
 
+  <!-- section 3 -->
+  <section class="biodata" id="section3">
+    <h2 class="blue-text">About Me</h2>
+    <p>A brief introduction about myself</p>
+    <div class="biodata-grid">
+      <div><strong class="blue-text">Full Name:</strong> Azam Azis</div>
+      <div><strong class="blue-text">Education:</strong> S-1 Pendidikan Kimia</div>
+      <div><strong class="blue-text">Contact:</strong> aziz76218@gmail.com</div>
+      <div><strong class="blue-text">Bahasa:</strong> Indonesia, Inggris</div>
+      <div><strong class="blue-text">Hobi:</strong> Menggambar, Coding</div>
+      <div><strong class="blue-text">Alamat:</strong> Yogyakarta</div>
+    </div>
+  </section>
 
+  <!-- section 4 -->
+  <section class="portfolio" id="section4">
+    <h2 class="blue-text">Portofolio</h2>
+    <div class="portfolio-grid">
+      <div class="project">
+        <img src="Boy.png" alt="Boy">
+        <h4>Proyek 1</h4>
+        <p>Deskripsi proyek 1.</p>
+      </div>
+      <div class="project">
+        <img src="Boy.png" alt="Boy">
+        <h4>Proyek 2</h4>
+        <p>Deskripsi proyek 2.</p>
+      </div>
+      <div class="project">
+        <img src="Boy.png" alt="Boy">
+        <h4>Proyek 3</h4>
+        <p>Deskripsi proyek 3.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Section 2: Judul di kiri dan gambar di kanan -->
-<table class="full-width-table round-corner" id="section2">
-    <thead>
-    <tr>
-        <th class="center-text">
-            <span class="about-header">Selamat Datang di Website Saya</span>
-            <br>
-            <br>
-            <span class="sub-title">Ini adalah contoh header dengan dua kolom. Kolom kiri berisi texts seperti ini</span>
-        </th>
-        <th>
-            <img src="./witch.jpg" alt="A Witch Boy" class="img-small image-container" >
-        </th>
-    </tr>
-    </thead>
-</table>
-
-
-<!-- Section 3: Biodata dengan 6 box -->
-
-<table border="0" class="full-width-table table round-corner" id="section3">
-    <thead>
-        <tr>
-            <th class="text-bottom" scope="colgroup" colspan="3">
-                <span class="about-header blue-bold">About me</span>
-                <br>
-                <span class="sub-title">A brief Introduction about myself</span>
-            </th>
-        </tr>
-    </thead>
-    <tbody class="round-corner">
-        <tr class="center-text">
-            <td class="cell-round"> <span class="blue-bold">Nama:</span> Azam Azis</td>
-            <td class="cell-round"> <span class="blue-bold">Pendidikan:</span> S-1 Pendidikan Kimia</td>
-            <td class="cell-round"> <span class="blue-bold">Kontak:</span> 081234567890</td>
-        </tr>
-    </tbody>
-    <tbody class="round-corner">
-        <tr class="center-text">
-            <td class="cell-round"> <span class="blue-bold">Hobi:</span> Coding</td>
-            <td class="cell-round"> <span class="blue-bold">Alamat:</span> Yogyakarta</td>
-            <td class="cell-round"> <span class="blue-bold">Bahasa:</span> Indonesia, Inggris</td>
-        </tr>
-    </tbody>
-</table>
-
-<br>
-
-<!-- Section 4: Portofolio -->
-<table class="full-width-table round-corner" id="section4">
-    <thead>
-        <tr class="center-text blue-bold">
-            <th class="about-header" scope="colgroup" colspan="3">Portofolio<br></th>
-        </tr>
-    </thead>
-    <tbody class="center-text">
-        <tr>
-            <td class="cell-portofolio">
-                <img src="./witch.jpg" alt="A Witch Boy" class="img-small image-container" >
-                <br> <strong>Proyek 1</strong>
-                <br> Deskripsi Proyek 1
-            </td>
-            <td class="cell-portofolio">
-                <img src="./witch.jpg" alt="A Witch Boy" class="img-small image-container" >
-                <br> <strong>Proyek 2</strong>
-                <br> Deskripsi Proyek 2
-            </td>
-        </tr>
-        <tr>
-            <td class="cell-portofolio">
-                <img src="./witch.jpg" alt="A Witch Boy" class="img-small image-container" >
-                <br> <strong>Proyek 3</strong>
-                <br> Deskripsi Proyek 3
-            </td>
-            <td class="cell-portofolio">
-                <img src="./witch.jpg" alt="A Witch Boy" class="img-small image-container" >
-                <br> <strong>Proyek 4</strong>
-                <br> Deskripsi Proyek 4
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<br>
-
-<div class="bottom-bar">
-    &copy; A2Ai5. All Rights Reserved.
-</div>
-
+  <!-- Footer -->
+  <footer class="footer">
+    © 2024 A2Ai5. All rights reserved.
+  </footer>
 </body>
 </html>
