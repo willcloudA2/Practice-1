@@ -196,3 +196,16 @@ footer {
 .blue-text {
   color: #007bff;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+  width: 90%;
+  padding: 10px;
+  }
+  h1 {
+  font-size: 24px;
+  }
+  p {
+  font-size: 14px;
+  }
+}
