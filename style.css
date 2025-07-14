@@ -65,6 +65,10 @@ body {
   margin-top: 10px;
 }
 
+.btn:hover {
+  background-color: #0056b3;
+}
+
 .header-img {
   width: 100%;
   display:flex;
